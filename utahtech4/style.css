@@ -3,16 +3,15 @@ body {
     background-attachment: fixed;
     color: #666666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-
+    margin: 0px;
 }
 
 header {
     background: #003058;
     color: #FFFFFF;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    grid-row: 1 / 2;
+    font-family: Georgia, 'Times New Roman', Times, serif grid-row: 1 / 2;
     grid-column: 2 / -2;
+    padding: 1rem;
 }
 
 header h1 {
@@ -23,19 +22,16 @@ header h1 {
     background-repeat: no-repeat;
     padding-left: 1em;
     background-origin: content-box;
-    margin: 0;
+    bottom: 0;
 }
 
-header a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
 
 nav {
     font-weight: bold;
     background: #F3F3F3;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
+
 }
 
 h2 {
@@ -64,22 +60,17 @@ footer {
     padding: 1rem;
     grid-row: 5 / 6;
     grid-column: 2 / -2;
-
 }
 
 #wrapper {
     display: grid;
     grid-auto-rows: minmax(0px, auto);
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0px, 175px)) minmax(0px, 1fr);
+
 }
 
 nav {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
-    background-color: #424242;
-    padding: 0;
-    margin: 0;
-    position: sticky;
-    top: 0;
 }
 
 main {
@@ -100,7 +91,6 @@ main {
     grid-row: 3 / 4;
     grid-column: 2 / -2;
 }
-
 
 #studenthero {
     height: 300px;
@@ -124,33 +114,13 @@ main {
 
 nav a {
     text-decoration: none;
-    color: of #FFFFFF;
-    padding: 1rem 0rem;
-    display: block;
-    text-align: center;
-}
-
-nav a:hover {
-    background-color: #BA1C21;
 }
 
 * {
     box-sizing: border-box;
 }
 
-main img {
-    float: right;
-    padding-left: 2rem;
-}
-
-nav ul {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-flow: row nowrap;
-    list-style-type: none;
-}
-
-nav ul li {
-    width: 100%;
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
