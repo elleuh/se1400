@@ -1,0 +1,65 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 0px;
+}
+
+.header {
+    background: rgba(178, 243, 161, 0.3);
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 90px;
+}
+
+.nav {
+    background: rgba(255, 200, 200, 0.3);
+    grid-column: 2 / -2;
+    grid-row: 1 / 2;
+    height: 90px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: auto auto;
+    grid-column: 2 / -2;
+    grid-row: 3 / 4;
+}
+
+.hero {
+    background: rgba(200, 200, 255, 0.3);
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+    height: 400px;
+}
+
+.content {
+    background: rgba(200, 255, 200, 0.3);
+    grid-row: 2 / 30;
+    grid-column: 1 / 9;
+    height: 800px;
+}
+
+.sidebar.left {
+    background: rgba(255, 255, 200, 0.3);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    height: 1200px;
+}
+
+.sidebar.right {
+    background: rgba(255, 255, 200, 0.3);
+    grid-column: 8 / -1;
+    grid-row: 3 / 4;
+    height: 1200px;
+    z-index: 10;
+}
+
+.footer {
+    background: rgba(200, 200, 200, 0.3);
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    height: 90px;
+}
