@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Layout */
+body {
+    background-color: #fff2f3;
+}
+
+.header {
+    background: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #faf3ef;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f8cfcf;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.footer {
+    background: #faf3ef;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 25px;
+    margin: 0 10px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    margin: 0 20px;
+}
