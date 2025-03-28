@@ -12,7 +12,7 @@ body {
 
 /*header & nav*/
 .header,
-.nav {
+nav {
     background: rgba(250, 249, 249, 0.5);
     position: absolute;
     width: 100%;
@@ -23,20 +23,26 @@ body {
     justify-content: center;
 }
 
-.nav ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     list-style: none;
     padding: 0px;
+    flex-flow: row nowrap;
 }
 
-.nav a {
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
     text-decoration: none;
     color: #2b2d42;
     font-weight: 100;
     font-size: 21px;
+    text-align: center;
 }
 
 /*main/hero content*/
@@ -177,6 +183,7 @@ body {
 }
 
 .service-button {
+
     position: absolute;
     bottom: -20px;
     left: 50%;
